@@ -1,0 +1,23 @@
+{
+    "name": "objectionJS",
+    "version": "0.0.1",
+    "description": "none yet",
+    "main": "index.js",
+    "scripts": {
+        "make-seed": "npx knex seed:make dev --knexfile ./db/knexfile.js",
+        "seed": "npx knex seed:run --knexfile ./db/knexfile.js",
+        "down": "npx knex migrate:down --knexfile ./db/knexfile.js",
+        "dev": "nodemon index.js",
+        "migrate": "npx knex migrate:latest --knexfile ./db/knexfile.js"  
+    },
+    "keywords": [],
+    "dependencies": {
+        "express": "^4.18.1",
+        "knex": "^2.1.0",
+        "objection": "^3.0.1",
+        "pg": "^8.7.3"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.19"
+    }
+}
